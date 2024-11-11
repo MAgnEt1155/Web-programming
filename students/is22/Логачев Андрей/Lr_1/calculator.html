@@ -1,0 +1,87 @@
+<head>
+  <title>Калькулятор</title>
+    <title>калькулятор</title>
+    <!-- указываем, что файл style.css содержит таблицу стилей (stylesheet) -->
+    <link rel="stylesheet" href="style.css"> 
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body class="body">
+
+    <div class="info text">
+        <input id="info__body_1" class="info__switch" type="checkbox">
+        <label for="info__body_1">ЛР выполнил Логачев Андрей Максимович</label>
+        <div class="info__body">
+          <p>Автор: MAgnEt1155</p>
+          <p>Логачев Андрей Максимович</p>
+          <p>Группа: ИС–22</p>
+        </div>
+    </div>
+
+    <div> <!-- div - это базовый html-контейнер, который может содержать в себе другие html-элементы. -->
+
+    <!-- фон для всего калькулятора -->
+    <div id="background" class="background">
+        
+        <!-- блок с экраном калькулятора, где будет выводиться результат вычислений. -->
+        <div class="result">
+            <div id ="express"> 0 </div>
+            <div id="result" class="out"> </div>
+        </div>
+        
+        <!-- блок с кнопками калькулятора. -->
+        <div>
+            <!--горизонтальный ряд из четырех кнопок-->
+            <div class="flex">
+                <button id="btn_op_sqrt" class="my-btn secondary">√</button>
+                <button id="btn_op_fac" class="my-btn secondary"> x!</button>
+                <button id="btn_op_deg" class="my-btn secondary">x²</button>
+                <button id="btn_op_null" class="my-btn secondary">00</button>
+            </div>
+            <div class="flex">  
+                <button id="btn_op_clear" class="my-btn secondary">AC</button>    <!-- про тэг кнопки: https://www.w3schools.com/tags/tag_button.asp -->
+                <button id="btn_op_sign" class="my-btn secondary">+/-</button>
+                <button id="btn_op_percent" class="my-btn secondary">%</button>
+                <button id="btn_op_div" class="my-btn primary">÷</button>
+            </div>
+
+            <div class="flex">
+                <button id="btn_digit_7" class="my-btn">7</button>
+                <button id="btn_digit_8" class="my-btn">8</button>
+                <button id="btn_digit_9" class="my-btn">9</button>
+                <button id="btn_op_mult" class="my-btn primary">x</button>
+            </div >
+
+            <div class="flex">
+                <button id="btn_digit_4" class="my-btn">4</button>
+                <button id="btn_digit_5" class="my-btn">5</button>
+                <button id="btn_digit_6" class="my-btn">6</button>
+                <button id="btn_op_minus" class="my-btn primary">-</button>
+            </div>
+
+            <div class="flex">
+                <button id="btn_digit_1" class="my-btn">1</button>
+                <button id="btn_digit_2" class="my-btn">2</button>
+                <button id="btn_digit_3" class="my-btn">3</button>
+                <button id="btn_op_plus" class="my-btn primary">+</button>
+            </div>
+
+            <div class="flex">
+                <button href="https://github.com/MAgnEt1155" class="my-btn git"></button>
+                <button id="btn_digit_0" class="my-btn">0</button>
+                <button id="btn_digit_dot" class="my-btn">.</button>
+                <button id="btn_op_equal" class="my-btn primary">=</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text">
+    <h3>Цель данной лабораторной работы</h3>
+    <p> <mark class="mark">Знакомство</mark> с инструментами построения пользовательских интерфейсов web-сайтов: <mark class="mark">HTML</mark>, <mark class="mark">CSS</mark></p>
+    <p> В ходе выполнения работы, предстоит ознакомиться с кодом реализации простого калькулятора, и затем выполнить задания по варианту.</p>
+</div>
+</body>
+</html>
+</body>
+</html>
