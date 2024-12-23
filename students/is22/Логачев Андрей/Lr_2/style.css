@@ -1,0 +1,121 @@
+
+/* опишем базовый стиль кнопки калькулятора */
+.my-btn { 
+    margin-left: 5px;
+    margin-right: 0px;           /* задаем отступ от кнопки справа */
+    margin-top: 5px;             /* задаем отступ от кнопки сверху*/
+    width: 50px;                 /* задаем ширину кнопки */
+    height: 50px;                /* задаем высоту кнопки */
+    border-radius: 20%;          /* округляем кнопку */
+    border: none;                /* отключаем обводку */
+    background: #3c312f;         /* задаем серый цвет кнопки */
+    color: #ff1f51;                /* задаем белый цвет текста внутри кнопки */
+    font-size: 1.5rem;           /* увеличим размер шрифта */
+    font-weight: 100;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* сменим шрифт */
+    cursor: pointer;             /* при наведении на кнопку курсор будет изменен
+                                    со стрелки на 'указательный палец' */
+    user-select: none;           /* отключаем возможность выделить текст внутри кнопки */
+    
+  } 
+  
+  /* hover - это состояние элемента, когда на него наведен курсор */
+  .my-btn:hover {
+    background: #ff1f506c; /* при наведение курсора на кнопку, она будет окрашена в серый */
+  }
+  
+  /* active - это состояние активации элемента. В случае кнопки - нажатие на нее */
+  .my-btn:active {
+    filter: brightness(130%); /* увеличим интенсивность цвета для эффекта вспышки */
+  }
+  
+  /* селектор для кнопок первостепенных операций */
+  .my-btn.primary { 
+    background: #ff1f51; /* цвет кнопки оранжевый */
+    font-weight: 700;
+    color: #3c312f;
+  }
+  
+  /* селектор для кнопок второстепенных операций */
+  .my-btn.secondary { 
+    background: #ffb8c4; /* цвет кнопки сервый */
+    font-weight: 700;
+    color: white;
+  }
+  
+  /* селектор для кнопки git */
+  .my-btn.git { 
+    display: inline-block;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThdZlszhihSfJBfoXkpJtOvDk9p_sskS4rSQ&s");
+    background-size: contain;
+}
+
+/* селектор для поля вывода результата */
+.result { 
+    width: 216px;
+    height: 70px;
+    margin-bottom: 15px;         /* отступ снизу */
+    padding-right: 10px;         /* выступ справа */
+    padding-top: 5;         /* выступ справа */
+    background: rgb(95, 90, 90); /* цвет можно задавать и таким образом */
+    text-align: right;           /* примагнитим текст к правой стороне */
+    color: #ff1f51;              /* цвет текста белый */
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.out {
+  color: #de4667;
+  font-size: 1.1rem;
+}
+
+.background {
+    width: 226px;
+    height: 430px;
+    background: #7d7676;
+    border-radius: 10px;
+    margin-bottom: 00px;
+    display: grid;
+}
+
+/* стиль для калькулятора*/
+.body {
+    background-image: url("2w.png");
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* сменим шрифт */
+    font-size: 1rem;           /* увеличим размер шрифта */
+    text-align: left;
+    margin-right: 1300px;
+    color: #e2acb8;
+}
+
+.info__switch {
+    display: none; /*убираем отображение переключателя*/
+}
+
+.info__body {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s; /*время раскрытия списка*/
+    color: #e2acb8;
+}
+
+.info__switch:checked~.info__body {
+    max-height: 120px; /*размеры раскрытого списка*/
+}
+
+.mark {
+    background: #ffb8c4;
+}
+
+.flex {
+    display: flex;
+}
+
